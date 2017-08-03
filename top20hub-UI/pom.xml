@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.kj</groupId>
-  <artifactId>top20hub-UI</artifactId>
+  <artifactId>top20hubUI</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>top20hub-UI Maven Webapp</name>
@@ -10,6 +10,7 @@
   	
   	<properties>
   		<javaee.version>7.0</javaee.version>
+  		<spring.version>4.3.6.RELEASE</spring.version>
   	</properties>
   
   <dependencies>
@@ -27,6 +28,16 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- Spring Dependency -->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+    
+    
   </dependencies>
   <build>
   	<!-- UPDATE TO LATEST VERSION OF JAVA -->
