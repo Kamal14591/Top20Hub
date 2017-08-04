@@ -48,45 +48,7 @@
 <body>
 
 	<!--Navbar start-->
-	<nav
-		class="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar">
-		<div class="container">
-			<button class="navbar-toggler navbar-toggler-right" type="button"
-				data-toggle="collapse" data-target="#navbarNav1"
-				aria-controls="navbarNav1" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand" href="../index.html"> <img
-				src="${img}/logo/logo.png" width="180" height="40" />
-			</a>
-			<div class="collapse navbar-collapse" id="navbarNav1">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link">Home <span
-							class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="modal"
-						href="#articlesInterestModal">Write Your Article</a></li>
-					<li class="nav-item"><a class="nav-link" data-toggle="modal"
-						href="#contactUsModal">Contact us</a> <!-- <h1 class="text-center"><a href="#myModal" role="button" class="btn btn-primary btn-lg" data-toggle="modal">Contact Us</a></h1> -->
-					</li>
-					<li class="nav-item"><a class="nav-link" data-toggle="modal"
-						href="#aboutusModal">About us</a></li>
-					<li class="nav-item"><a class="nav-link" target="_blank"
-						href="${content}/topAuthers.html">Top 20 Authers</a></li>
-				</ul>
-				<ul>
-					<li class="nav-item pull-right">
-						<button type="button"
-							class="btn btn-primary btn-block waves-effect waves-light"
-							data-toggle="modal" data-target="#loginModel">Log In
-							/Sign Up</button>
-					</li>
-					<li class="nav-item pull-right"><a target="_blank"
-						class="nav-link" href="${content}/profile.html">My Profile</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<%@include file="./shared/navbar.jsp" %>
 	<!--Navbar End-->
 
 	<!--Carousel Wrapper start-->
@@ -644,84 +606,7 @@
 
 
 	<!--Footer-->
-	<footer class="page-footer center-on-small-only">
-
-		<!--Footer Links-->
-		<div class="container-fluid">
-			<div class="row">
-
-				<!--First column-->
-				<div class="col-lg-3 offset-lg-1 hidden-lg-down">
-					<h5 class="title">About Top20Hub</h5>
-					<p>Top20hub is best place to read article of best Top 20 of the
-						world.</p>
-
-
-				</div>
-				<!--/.First column-->
-
-				<hr class="hidden-md-up">
-
-				<!--Second column-->
-				<div class="col-lg-2 col-md-4 offset-lg-1">
-					<h5 class="title">Recent Trips</h5>
-					<ul>
-						<li><a href="#!">Nainital</a></li>
-						<li><a href="#!">Ranikhet</a></li>
-						<li><a href="#!">Rishikesh</a></li>
-						<li><a href="#!">Haridwar</a></li>
-					</ul>
-				</div>
-				<!--/.Second column-->
-
-				<hr class="hidden-md-up">
-
-				<!--Third column-->
-				<div class="col-lg-2 col-md-4">
-					<h5 class="title">our latest articles</h5>
-					<ul>
-						<li><a href="#!">"Inspirational story"</a></li>
-						<li><a href="#!">"top 20 best places in India"</a></li>
-						<!-- <li><a href="#!">"Talking with locals"</a></li>
-                        <li><a href="#!">"Leaving things behind"</a></li> -->
-					</ul>
-				</div>
-				<!--/.Third column-->
-
-				<hr class="hidden-md-up">
-
-				<!--Fourth column-->
-				<div class="col-lg-2 col-md-4">
-					<h5 class="title">Follow me on</h5>
-					<ul>
-						<li><a target="_blank"
-							href="https://www.facebook.com/Top20hub-516480982075774/?hc_ref=SEARCH&fref=nf">Facebook</a></li>
-						<li><a target="_blank"
-							href="https://www.instagram.com/top20hub/?hl=en">Instagram</a></li>
-						<li><a target="_blank" href="https://twitter.com/top20hub">Twitter</a></li>
-						<li><a target="_blank" href="#!">Quora</a></li>
-					</ul>
-				</div>
-				<!--/.Fourth column-->
-
-			</div>
-		</div>
-		<!--/.Footer Links-->
-
-		<hr>
-
-		<!--Copyright-->
-		<div class="footer-copyright">
-			<div class="container-fluid">
-				© 2017 Copyright: <a href="page.jsp"> top20hub.com </a>
-				<hr />
-
-
-			</div>
-		</div>
-		<!--/.Copyright-->
-
-	</footer>
+	<%@include file="./shared/footer.jsp" %>
 	<!--/.Footer-->
 
 
