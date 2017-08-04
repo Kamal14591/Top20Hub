@@ -141,6 +141,7 @@ i {
 	-moz-backface-visibility: hidden;
 	-webkit-transform: rotatey(-180deg);
 	transform: rotatey(-180deg);
+	background-color: transparent;
 }
 
 .flip .card {
@@ -162,11 +163,13 @@ i {
 	position: absolute;
 	width: 100%;
 	z-index: 1;
+	background-color: transparent;
 }
 
 .flip .card .back {
 	-webkit-transform: rotatey(-180deg);
 	transform: rotatey(-180deg);
+	background-color: transparent;
 }
 
 .inner {
