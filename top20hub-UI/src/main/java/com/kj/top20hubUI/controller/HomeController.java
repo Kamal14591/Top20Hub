@@ -13,7 +13,6 @@ public class HomeController {
 	{
 		
 		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("greeting","welcome to spring mvc");
 		return mv;
 		
 	}
